@@ -11,13 +11,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
+@EnableWebSecurity
+public class BrowserSecurityConfig {
 
     @Autowired
     private MyAuthenticationSucessHandler authenticationSucessHandler;
@@ -33,6 +35,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private SmsAuthenticationConfig smsAuthenticationConfig;
+    
     @Autowired
     private MySessionExpiredStrategy sessionExpiredStrategy;
 
@@ -44,9 +47,8 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class) // 添加验证码校验过滤器
             .addFilterBefore(smsCodeFilter,UsernamePasswordAuthenticationFilter.class) // 添加短信验证码校验过滤器
                 .formLogin() // 表单登录
@@ -56,13 +58,13 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                     .successHandler(authenticationSucessHandler) // 处理登录成功
                     .failureHandler(authenticationFailureHandler) // 处理登录失败
                 .and()
-                    .authorizeRequests() // 授权配置
-                    .antMatchers("/authentication/require",
-                            "/login.html", "/code/image","/code/sms","/session/invalid", "/signout/success").permitAll() // 无需认证的请求路�?
-                    .anyRequest()  // 所有请�?
-                    .authenticated() // 都需要认�?
+                    .authorizeHttpRequests() // 授权配置
+                    .requestMatchers("/authentication/require",
+                            "/login.html", "/code/image","/code/sms","/session/invalid", "/signout/success").permitAll() // 无需认证的请求路径
+                    .anyRequest()  // 所有请求
+                    .authenticated() // 都需要认证
                 .and()
-                    .sessionManagement() // 添加 Session管理�?
+                    .sessionManagement() // 添加 Session管理器
                     .invalidSessionUrl("/session/invalid") // Session失效后跳转到这个链接
                     .maximumSessions(1)
                     .maxSessionsPreventsLogin(true)
@@ -76,7 +78,9 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                     .deleteCookies("JSESSIONID")
                 .and()
                     .csrf().disable()
-                .apply(smsAuthenticationConfig); // 将短信验证码认证配置加到 Spring Security �?
+                .apply(smsAuthenticationConfig); // 将短信验证码认证配置加到 Spring Security 中
+        
+        return http.build();
     }
 }
 

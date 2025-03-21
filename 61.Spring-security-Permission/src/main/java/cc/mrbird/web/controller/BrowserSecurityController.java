@@ -41,18 +41,18 @@ public class BrowserSecurityController {
     @GetMapping("/session/invalid")
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public String sessionInvalid() {
-        return "session已失效，请重新认�?;
+        return "session已失效，请重新认证";
     }
 
     @GetMapping("/signout/success")
     public String signout() {
-        return "退出成功，请重新登�?;
+        return "退出成功，请重新登录";
     }
 
     @GetMapping("/auth/admin")
     @PreAuthorize("hasAuthority('admin')")
     public String authenticationTest() {
-        return "您拥有admin权限，可以查�?;
+        return "您拥有admin权限，可以查看";
     }
 }
 

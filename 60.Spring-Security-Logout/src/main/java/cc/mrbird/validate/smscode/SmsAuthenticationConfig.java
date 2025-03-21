@@ -35,7 +35,6 @@ public class SmsAuthenticationConfig extends SecurityConfigurerAdapter<DefaultSe
 
         http.authenticationProvider(smsAuthenticationProvider)
                 .addFilterAfter(smsAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-
     }
 }
 
