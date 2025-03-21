@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.imageio.ImageIO;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -38,8 +38,8 @@ public class ValidateController {
     public void createSmsCode(HttpServletRequest request, HttpServletResponse response, String mobile) {
         SmsCode smsCode = createSMSCode();
         sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY_SMS_CODE + mobile, smsCode);
-        // 输出验证码到控制台代替短信发送服务
-        System.out.println("您的登录验证码为：" + smsCode.getCode() + "，有效时间为60秒");
+        // 输出验证码到控制台代替短信发送服�?
+        System.out.println("您的登录验证码为�? + smsCode.getCode() + "，有效时间为60�?);
     }
 
     private SmsCode createSMSCode() {
@@ -48,10 +48,10 @@ public class ValidateController {
     }
 
     private ImageCode createImageCode() {
-        int width = 100; // 验证码图片宽度
-        int height = 36; // 验证码图片长度
-        int length = 4; // 验证码位数
-        int expireIn = 60; // 验证码有效时间 60s
+        int width = 100; // 验证码图片宽�?
+        int height = 36; // 验证码图片长�?
+        int length = 4; // 验证码位�?
+        int expireIn = 60; // 验证码有效时�?60s
 
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
@@ -98,3 +98,4 @@ public class ValidateController {
     }
 
 }
+

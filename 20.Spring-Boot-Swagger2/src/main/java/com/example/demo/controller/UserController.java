@@ -17,27 +17,25 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.domain.User;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
-import springfox.documentation.annotations.ApiIgnore;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.Hidden;
 
-@Api(value = "用户Controller")
+@Tag(name = "用户Controller")
 @Controller
 @RequestMapping("user")
 public class UserController {
 
-	@ApiIgnore
+	@Hidden
 	@GetMapping("hello")
 	public @ResponseBody String hello() {
 		return "hello";
 	}
 
-	@ApiOperation(value = "获取用户信息", notes = "根据用户id获取用户信息")
-	@ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
+	@Operation(summary = "获取用户信息", description = "根据用户id获取用户信息")
 	@GetMapping("/{id}")
-	public @ResponseBody User getUserById(@PathVariable(value = "id") Long id) {
+	public @ResponseBody User getUserById(@Parameter(description = "用户id") @PathVariable(value = "id") Long id) {
 		User user = new User();
 		user.setId(id);
 		user.setName("mrbird");
@@ -45,7 +43,7 @@ public class UserController {
 		return user;
 	}
 
-	@ApiOperation(value = "获取用户列表", notes = "获取用户列表")
+	@Operation(summary = "获取用户列表", description = "获取用户列表")
 	@GetMapping("/list")
 	public @ResponseBody List<User> getUserList() {
 		List<User> list = new ArrayList<>();
@@ -62,33 +60,29 @@ public class UserController {
 		return list;
 	}
 
-	@ApiOperation(value = "新增用户", notes = "根据用户实体创建用户")
-	@ApiImplicitParam(name = "user", value = "用户实体", required = true, dataType = "User")
+	@Operation(summary = "新增用户", description = "根据用户实体创建用户")
 	@PostMapping("/add")
-	public @ResponseBody Map<String, Object> addUser(@RequestBody User user) {
+	public @ResponseBody Map<String, Object> addUser(@Parameter(description = "用户实体") @RequestBody User user) {
 		Map<String, Object> map = new HashMap<>();
 		map.put("result", "success");
 		return map;
 	}
 
-	@ApiOperation(value = "删除用户", notes = "根据用户id删除用户")
-	@ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
+	@Operation(summary = "删除用户", description = "根据用户id删除用户")
 	@DeleteMapping("/{id}")
-	public @ResponseBody Map<String, Object> deleteUser(@PathVariable(value = "id") Long id) {
+	public @ResponseBody Map<String, Object> deleteUser(@Parameter(description = "用户id") @PathVariable(value = "id") Long id) {
 		Map<String, Object> map = new HashMap<>();
 		map.put("result", "success");
 		return map;
 	}
 
-	@ApiOperation(value = "更新用户", notes = "根据用户id更新用户")
-	@ApiImplicitParams({
-			@ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path"),
-			@ApiImplicitParam(name = "user", value = "用户实体", required = true, dataType = "User") })
+	@Operation(summary = "更新用户", description = "根据用户id更新用户")
 	@PutMapping("/{id}")
-	public @ResponseBody Map<String, Object> updateUser(@PathVariable(value = "id") Long id, @RequestBody User user) {
+	public @ResponseBody Map<String, Object> updateUser(
+			@Parameter(description = "用户id") @PathVariable(value = "id") Long id, 
+			@Parameter(description = "用户实体") @RequestBody User user) {
 		Map<String, Object> map = new HashMap<>();
 		map.put("result", "success");
 		return map;
 	}
-
 }

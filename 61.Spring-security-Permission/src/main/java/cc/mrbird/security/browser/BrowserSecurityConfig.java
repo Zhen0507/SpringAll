@@ -65,11 +65,11 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .authorizeRequests() // 授权配置
                     .antMatchers("/authentication/require",
-                            "/login.html", "/code/image","/code/sms","/session/invalid", "/signout/success").permitAll() // 无需认证的请求路径
-                    .anyRequest()  // 所有请求
-                    .authenticated() // 都需要认证
+                            "/login.html", "/code/image","/code/sms","/session/invalid", "/signout/success").permitAll() // 无需认证的请求路�?
+                    .anyRequest()  // 所有请�?
+                    .authenticated() // 都需要认�?
                 .and()
-                    .sessionManagement() // 添加 Session管理器
+                    .sessionManagement() // 添加 Session管理�?
                     .invalidSessionUrl("/session/invalid") // Session失效后跳转到这个链接
                     .maximumSessions(1)
                     .maxSessionsPreventsLogin(true)
@@ -83,6 +83,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                     .deleteCookies("JSESSIONID")
                 .and()
                     .csrf().disable()
-                .apply(smsAuthenticationConfig); // 将短信验证码认证配置加到 Spring Security 中
+                .apply(smsAuthenticationConfig); // 将短信验证码认证配置加到 Spring Security �?
     }
 }
+

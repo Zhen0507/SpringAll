@@ -30,3 +30,4 @@ public class UserDetailService implements UserDetailsService {
                 user.isAccountNonLocked(), AuthorityUtils.commaSeparatedStringToAuthorityList("admin"));
     }
 }
+

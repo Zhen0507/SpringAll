@@ -1,6 +1,6 @@
 package com.springboot.datasource;
 
-import javax.sql.DataSource;
+import jakarta.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;

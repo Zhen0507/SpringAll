@@ -17,7 +17,7 @@ public class SmsAuthenticationProvider implements AuthenticationProvider {
         UserDetails userDetails = userDetailService.loadUserByUsername((String) authenticationToken.getPrincipal());
 
         if (userDetails == null)
-            throw new InternalAuthenticationServiceException("未找到与该手机号对应的用户");
+            throw new InternalAuthenticationServiceException("未找到与该手机号对应的用�?);
 
         SmsAuthenticationToken authenticationResult = new SmsAuthenticationToken(userDetails, userDetails.getAuthorities());
 
@@ -39,3 +39,4 @@ public class SmsAuthenticationProvider implements AuthenticationProvider {
         this.userDetailService = userDetailService;
     }
 }
+

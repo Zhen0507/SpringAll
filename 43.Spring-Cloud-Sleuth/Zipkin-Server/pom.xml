@@ -9,6 +9,10 @@
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
 
+    <!-- 注意：在Spring Cloud 2023.0.0中，不再支持自托管的Zipkin Server，
+    官方建议使用官方镜像：https://github.com/openzipkin/zipkin 
+    保留此模块仅用于教学目的 -->
+    
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

@@ -2,7 +2,8 @@ package com.springboot.config;
 
 import java.util.LinkedHashMap;
 
-import org.apache.shiro.codec.Base64;
+
+import org.apache.shiro.lang.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;

@@ -1,13 +1,19 @@
 # Initializers
+# 注意：在Spring Boot 3中，ApplicationContextInitializer可以通过spring.factories注册，
+# 也可以通过META-INF/spring/org.springframework.boot.context.ApplicationContextInitializers文件注册
 org.springframework.context.ApplicationContextInitializer=\
 com.example.demo.initializer.HelloApplicationContextInitializer,\
 com.example.demo.initializer.AfterHelloApplicationContextInitializer
 
 # Application Listeners
+# 注意：在Spring Boot 3中，ApplicationListener可以通过spring.factories注册，
+# 也可以通过META-INF/spring/org.springframework.context.ApplicationListeners文件注册
 org.springframework.context.ApplicationListener=\
 com.example.demo.listener.ContextClosedEventListener,\
 com.example.demo.listener.AfterContextClosedEventListener
 
 # Run Listeners
+# 注意：在Spring Boot 3中，SpringApplicationRunListener不再通过spring.factories注册，
+# 而是通过META-INF/spring/org.springframework.boot.SpringApplicationRunListener.imports文件注册
 org.springframework.boot.SpringApplicationRunListener=\
 com.example.demo.listener.HelloApplicationRunListener

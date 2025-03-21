@@ -65,3 +65,4 @@ public class MyUser implements Serializable {
         this.enabled = enabled;
     }
 }
+

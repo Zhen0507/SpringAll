@@ -53,3 +53,4 @@ public class ImageCode implements Serializable {
         this.expireTime = expireTime;
     }
 }
+

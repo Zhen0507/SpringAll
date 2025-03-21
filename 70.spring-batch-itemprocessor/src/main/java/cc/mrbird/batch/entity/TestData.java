@@ -1,6 +1,6 @@
 package cc.mrbird.batch.entity;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 /**
  * @author MrBird

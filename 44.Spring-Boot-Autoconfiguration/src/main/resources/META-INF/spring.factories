@@ -1,3 +1,5 @@
 # Auto Configure
+# 注意：在Spring Boot 3中，不再推荐使用spring.factories文件进行自动配置
+# 推荐使用META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports文件
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.example.demo.configuration.HelloWorldAutoConfiguration

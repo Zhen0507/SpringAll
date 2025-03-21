@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -40,11 +40,12 @@ public class BrowserSecurityController {
     @GetMapping("/session/invalid")
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public String sessionInvalid() {
-        return "session已失效，请重新认证";
+        return "session已失效，请重新认�?;
     }
 
     @GetMapping("/signout/success")
     public String signout() {
-        return "退出成功，请重新登录";
+        return "退出成功，请重新登�?;
     }
 }
+

@@ -1,10 +1,10 @@
 package cc.mrbird.provider.service;
 
 import cc.mrbird.common.api.HelloService;
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Component;
 
-@Service(interfaceClass = HelloService.class)
+@DubboService(interfaceClass = HelloService.class)
 @Component
 public class HelloServiceImpl implements HelloService {
     @Override

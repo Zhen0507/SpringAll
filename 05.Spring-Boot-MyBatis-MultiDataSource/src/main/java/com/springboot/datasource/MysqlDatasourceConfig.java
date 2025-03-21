@@ -1,6 +1,6 @@
 package com.springboot.datasource;
 
-import javax.sql.DataSource;
+import jakarta.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

@@ -38,3 +38,4 @@ public class SmsAuthenticationConfig extends SecurityConfigurerAdapter<DefaultSe
 
     }
 }
+
