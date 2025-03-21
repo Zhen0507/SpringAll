@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Eureka-Client (2)" />
+        <module name="Security (4)" />
+        <module name="spring-cloud-alibaba-nacos-config" />
+        <module name="Turbine" />
+        <module name="Security" />
+        <module name="Spring-Boot-JdbcTemplate-MultiDataSource" />
+        <module name="security (7)" />
+        <module name="spring-batch-start" />
+        <module name="Eureka-Service (5)" />
+        <module name="Spring-Boot-Redis-Cache" />
+        <module name="demo (4)" />
+        <module name="sso-server" />
+        <module name="Spring-Boot-Mapper-PageHelper" />
+        <module name="demo (1) (cc.mrbird)" />
+        <module name="server-provider (1) (com.example)" />
+        <module name="spring-batch-itemreader" />
+        <module name="Turbine-Stream" />
+        <module name="Ribbon-Consumer" />
+        <module name="Eureka-Client (3)" />
+        <module name="Spring-Boot-Shiro-Thymeleaf-Tag" />
+        <module name="Security (5)" />
+        <module name="server-consumer" />
+        <module name="Spring-Boot-Jackson" />
+        <module name="Spring-Boot-Thymeleaf" />
+        <module name="Eureka-Service (4)" />
+        <module name="demo (3)" />
+        <module name="Spring-Boot-Shiro-Redis" />
+        <module name="Spring-Boot-Testing" />
+        <module name="Security (2)" />
+        <module name="Feign-Consumer" />
+        <module name="Spring-Boot-Shiro-Ehcache" />
+        <module name="Spring-Boot-Email" />
+        <module name="Config-Server" />
+        <module name="Eureka-Service (2)" />
+        <module name="Eureka-Service (3)" />
+        <module name="demo (2)" />
+        <module name="demo (2) (cc.mrbird)" />
+        <module name="server-provider" />
+        <module name="Security (1)" />
+        <module name="sso-application-one" />
+        <module name="Feign-Consumer (1)" />
+        <module name="Eureka-Client (1)" />
+        <module name="server-consumer (2)" />
+        <module name="Security (3)" />
+        <module name="spring-batch-launcher" />
+        <module name="spring-boot-websocket-socketjs" />
+        <module name="spring-batch-exception" />
+        <module name="sso-application-two" />
+        <module name="Spring-Boot-Filter-Interceptor" />
+        <module name="Eureka-Service (1)" />
+        <module name="Spring-Boot-Shiro-RememberMe" />
+        <module name="security (2)" />
+        <module name="spring-batch-itemwriter" />
+        <module name="Spring-Boot-Actuator" />
+        <module name="Spring-Boot-MyBatis-MultiDataSource" />
+        <module name="demo (1)" />
+        <module name="spring-batch-itemprocessor" />
+        <module name="Zuul-Gateway" />
+        <module name="webflux (1)" />
+        <module name="Spring-Boot-MyBatis" />
+        <module name="provider (1)" />
+        <module name="Spring-Boot-Exception" />
+        <module name="server-consumer (1)" />
+        <module name="server-consumer (3)" />
+        <module name="Spring-Boot-Swagger2" />
+        <module name="Eureka-Client (6)" />
+        <module name="SpringApplication" />
+        <module name="Hystrix-Dashboard (1)" />
+        <module name="autoconfig" />
+        <module name="validator" />
+        <module name="security (3)" />
+        <module name="Eureka-Service (9)" />
+        <module name="server-provider (1)" />
+        <module name="Zipkin-Server" />
+        <module name="Ribbon-Consumer (2)" />
+        <module name="Spring-Boot-Shiro-Authentication" />
+        <module name="Hystrix-Dashboard" />
+        <module name="Spring-Boot-AOP-Log" />
+        <module name="spring-batch-listener" />
+        <module name="Spring-Boot-Admin-Server" />
+        <module name="common-api" />
+        <module name="Eureka-Client" />
+        <module name="Spring-Boot-Config" />
+        <module name="Start-Spring-Boot" />
+        <module name="Spring-Boot-Devtools" />
+        <module name="Eureka-Service (8)" />
+        <module name="Spring-Boot-JdbcTemplate" />
+        <module name="server-provider (2)" />
+        <module name="Ribbon-Consumer (3)" />
+        <module name="Config-Client" />
+        <module name="Eureka-Client (4)" />
+        <module name="Security (6)" />
+        <module name="common-api (1)" />
+        <module name="demo (1) (com.springboot)" />
+        <module name="webflux" />
+        <module name="Spring-Boot-Shiro-Authorization" />
+        <module name="demo" />
+        <module name="security (5)" />
+        <module name="Eureka-Service" />
+        <module name="spring-cloud-alibaba-sentinel-dashboard-guide" />
+        <module name="provider" />
+        <module name="Eureka-Service (7)" />
+        <module name="mongodb" />
+        <module name="consumer" />
+        <module name="consumer (1)" />
+        <module name="Config-Client (1)" />
+        <module name="Eureka-Client (5)" />
+        <module name="Security (7)" />
+        <module name="Config-Server (1)" />
+        <module name="security (6)" />
+        <module name="common-api (2)" />
+        <module name="Eureka-Service (6)" />
+        <module name="Spring-Boot-Ehcache-Cache" />
+        <module name="Server-Consumer (1) (com.example)" />
+        <module name="Spring-Boot-admin-Client" />
+        <module name="Server-Provider1" />
+        <module name="Server-Provider2" />
+        <module name="Server-Consumer (1)" />
+        <module name="Ribbon-Consumer (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="security (1)" target="21" />
+      <module name="security (2)" target="21" />
+      <module name="security (3)" target="21" />
+      <module name="security (4)" target="21" />
+      <module name="server-consumer (1) (com.example)" target="21" />
+      <module name="Server-Consumer (1) (com.example)" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Config-Client" options="-parameters" />
+      <module name="Config-Client (1)" options="-parameters" />
+      <module name="Config-Server" options="-parameters" />
+      <module name="Config-Server (1)" options="-parameters" />
+      <module name="Eureka-Client (1)" options="-parameters" />
+      <module name="Eureka-Client (2)" options="-parameters" />
+      <module name="Eureka-Client (3)" options="-parameters" />
+      <module name="Eureka-Service" options="-parameters" />
+      <module name="Eureka-Service (1)" options="-parameters" />
+      <module name="Eureka-Service (2)" options="-parameters" />
+      <module name="Eureka-Service (3)" options="-parameters" />
+      <module name="Eureka-Service (4)" options="-parameters" />
+      <module name="Eureka-Service (5)" options="-parameters" />
+      <module name="Eureka-Service (6)" options="-parameters" />
+      <module name="Feign-Consumer (1)" options="-parameters" />
+      <module name="Hystrix-Dashboard" options="-parameters" />
+      <module name="Ribbon-Consumer" options="-parameters" />
+      <module name="Ribbon-Consumer (1)" options="-parameters" />
+      <module name="Ribbon-Consumer (2)" options="-parameters" />
+      <module name="Security" options="-parameters" />
+      <module name="Security (1)" options="-parameters" />
+      <module name="Security (2)" options="-parameters" />
+      <module name="Security (3)" options="-parameters" />
+      <module name="Security (4)" options="-parameters" />
+      <module name="Security (5)" options="-parameters" />
+      <module name="Security (6)" options="-parameters" />
+      <module name="Security (7)" options="-parameters" />
+      <module name="Server-Consumer (1)" options="-parameters" />
+      <module name="Server-Provider1" options="-parameters" />
+      <module name="Server-Provider2" options="-parameters" />
+      <module name="Spring-Boot-AOP-Log" options="-parameters" />
+      <module name="Spring-Boot-Actuator" options="-parameters" />
+      <module name="Spring-Boot-Admin-Server" options="-parameters" />
+      <module name="Spring-Boot-Config" options="-parameters" />
+      <module name="Spring-Boot-Devtools" options="-parameters" />
+      <module name="Spring-Boot-Ehcache-Cache" options="-parameters" />
+      <module name="Spring-Boot-Email" options="-parameters" />
+      <module name="Spring-Boot-Exception" options="-parameters" />
+      <module name="Spring-Boot-Filter-Interceptor" options="-parameters" />
+      <module name="Spring-Boot-Jackson" options="-parameters" />
+      <module name="Spring-Boot-JdbcTemplate" options="-parameters" />
+      <module name="Spring-Boot-JdbcTemplate-MultiDataSource" options="-parameters" />
+      <module name="Spring-Boot-Mapper-PageHelper" options="-parameters" />
+      <module name="Spring-Boot-MyBatis" options="-parameters" />
+      <module name="Spring-Boot-MyBatis-MultiDataSource" options="-parameters" />
+      <module name="Spring-Boot-Redis-Cache" options="-parameters" />
+      <module name="Spring-Boot-Shiro-Authentication" options="-parameters" />
+      <module name="Spring-Boot-Shiro-Authorization" options="-parameters" />
+      <module name="Spring-Boot-Shiro-Ehcache" options="-parameters" />
+      <module name="Spring-Boot-Shiro-Redis" options="-parameters" />
+      <module name="Spring-Boot-Shiro-RememberMe" options="-parameters" />
+      <module name="Spring-Boot-Shiro-Thymeleaf-Tag" options="-parameters" />
+      <module name="Spring-Boot-Swagger2" options="-parameters" />
+      <module name="Spring-Boot-Testing" options="-parameters" />
+      <module name="Spring-Boot-Thymeleaf" options="-parameters" />
+      <module name="Spring-Boot-admin-Client" options="-parameters" />
+      <module name="SpringApplication" options="-parameters" />
+      <module name="Start-Spring-Boot" options="-parameters" />
+      <module name="Turbine" options="-parameters" />
+      <module name="Turbine-Stream" options="-parameters" />
+      <module name="Zuul-Gateway" options="-parameters" />
+      <module name="autoconfig" options="-parameters" />
+      <module name="common-api" options="-parameters" />
+      <module name="common-api (1)" options="-parameters" />
+      <module name="common-api (2)" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="consumer (1)" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="demo (1)" options="-parameters" />
+      <module name="demo (1) (cc.mrbird)" options="-parameters" />
+      <module name="demo (1) (com.springboot)" options="-parameters" />
+      <module name="demo (2)" options="-parameters" />
+      <module name="demo (2) (cc.mrbird)" options="-parameters" />
+      <module name="demo (3)" options="-parameters" />
+      <module name="demo (4)" options="-parameters" />
+      <module name="dubbo-boot" options="-parameters" />
+      <module name="dubbo-boot (1)" options="-parameters" />
+      <module name="dubbo-boot (2)" options="-parameters" />
+      <module name="mongodb" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="provider (1)" options="-parameters" />
+      <module name="security (1)" options="-parameters" />
+      <module name="security (2)" options="-parameters" />
+      <module name="security (3)" options="-parameters" />
+      <module name="security (4)" options="-parameters" />
+      <module name="security (5)" options="-parameters" />
+      <module name="security (6)" options="-parameters" />
+      <module name="security (7)" options="-parameters" />
+      <module name="server-consumer" options="-parameters" />
+      <module name="server-consumer (1)" options="-parameters" />
+      <module name="server-consumer (1) (com.example)" options="-parameters" />
+      <module name="server-consumer (2)" options="-parameters" />
+      <module name="server-consumer (3)" options="-parameters" />
+      <module name="server-provider" options="-parameters" />
+      <module name="server-provider (1)" options="-parameters" />
+      <module name="server-provider (1) (com.example)" options="-parameters" />
+      <module name="server-provider (2)" options="-parameters" />
+      <module name="spring-batch-exception" options="-parameters" />
+      <module name="spring-batch-itemprocessor" options="-parameters" />
+      <module name="spring-batch-itemreader" options="-parameters" />
+      <module name="spring-batch-itemwriter" options="-parameters" />
+      <module name="spring-batch-launcher" options="-parameters" />
+      <module name="spring-batch-listener" options="-parameters" />
+      <module name="spring-batch-start" options="-parameters" />
+      <module name="spring-boot-websocket-socketjs" options="-parameters" />
+      <module name="spring-cloud-alibaba-nacos-config" options="-parameters" />
+      <module name="spring-cloud-alibaba-sentinel-dashboard-guide" options="-parameters" />
+      <module name="sso-application-one" options="-parameters" />
+      <module name="sso-application-two" options="-parameters" />
+      <module name="sso-server" options="-parameters" />
+      <module name="validator" options="-parameters" />
+      <module name="webflux" options="-parameters" />
+      <module name="webflux (1)" options="-parameters" />
+    </option>
+  </component>
+</project>
