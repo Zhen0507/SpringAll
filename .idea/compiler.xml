@@ -31,6 +31,7 @@
         <module name="server-consumer" />
         <module name="Spring-Boot-Jackson" />
         <module name="Spring-Boot-Thymeleaf" />
+        <module name="security (8)" />
         <module name="Eureka-Service (4)" />
         <module name="demo (3)" />
         <module name="Spring-Boot-Shiro-Redis" />
@@ -39,6 +40,7 @@
         <module name="Feign-Consumer" />
         <module name="Spring-Boot-Shiro-Ehcache" />
         <module name="Spring-Boot-Email" />
+        <module name="security (9)" />
         <module name="Config-Server" />
         <module name="Eureka-Service (2)" />
         <module name="Eureka-Service (3)" />
@@ -58,7 +60,6 @@
         <module name="Spring-Boot-Filter-Interceptor" />
         <module name="Eureka-Service (1)" />
         <module name="Spring-Boot-Shiro-RememberMe" />
-        <module name="security (2)" />
         <module name="spring-batch-itemwriter" />
         <module name="Spring-Boot-Actuator" />
         <module name="Spring-Boot-MyBatis-MultiDataSource" />
@@ -69,7 +70,6 @@
         <module name="Spring-Boot-MyBatis" />
         <module name="provider (1)" />
         <module name="Spring-Boot-Exception" />
-        <module name="server-consumer (1)" />
         <module name="server-consumer (3)" />
         <module name="Spring-Boot-Swagger2" />
         <module name="Eureka-Client (6)" />
@@ -77,7 +77,6 @@
         <module name="Hystrix-Dashboard (1)" />
         <module name="autoconfig" />
         <module name="validator" />
-        <module name="security (3)" />
         <module name="Eureka-Service (9)" />
         <module name="server-provider (1)" />
         <module name="Zipkin-Server" />
@@ -104,7 +103,6 @@
         <module name="webflux" />
         <module name="Spring-Boot-Shiro-Authorization" />
         <module name="demo" />
-        <module name="security (5)" />
         <module name="Eureka-Service" />
         <module name="spring-cloud-alibaba-sentinel-dashboard-guide" />
         <module name="provider" />
@@ -114,9 +112,7 @@
         <module name="consumer (1)" />
         <module name="Config-Client (1)" />
         <module name="Eureka-Client (5)" />
-        <module name="Security (7)" />
         <module name="Config-Server (1)" />
-        <module name="security (6)" />
         <module name="common-api (2)" />
         <module name="Eureka-Service (6)" />
         <module name="Spring-Boot-Ehcache-Cache" />
@@ -133,6 +129,10 @@
       <module name="security (2)" target="21" />
       <module name="security (3)" target="21" />
       <module name="security (4)" target="21" />
+      <module name="security (5)" target="21" />
+      <module name="security (6)" target="21" />
+      <module name="Security (7)" target="21" />
+      <module name="server-consumer (1)" target="21" />
       <module name="server-consumer (1) (com.example)" target="21" />
       <module name="Server-Consumer (1) (com.example)" target="21" />
     </bytecodeTargetLevel>
@@ -227,6 +227,8 @@
       <module name="security (5)" options="-parameters" />
       <module name="security (6)" options="-parameters" />
       <module name="security (7)" options="-parameters" />
+      <module name="security (8)" options="-parameters" />
+      <module name="security (9)" options="-parameters" />
       <module name="server-consumer" options="-parameters" />
       <module name="server-consumer (1)" options="-parameters" />
       <module name="server-consumer (1) (com.example)" options="-parameters" />
