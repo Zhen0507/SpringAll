@@ -7,6 +7,7 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import com.springboot.shiro.ShiroRealm;
 
@@ -14,7 +15,7 @@ import com.springboot.shiro.ShiroRealm;
 public class ShiroConfig {
 	
 	@Bean
-	public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager) {
+	public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
 		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 		shiroFilterFactoryBean.setSecurityManager(securityManager);
 		shiroFilterFactoryBean.setLoginUrl("/login");
@@ -37,9 +38,10 @@ public class ShiroConfig {
 		return shiroFilterFactoryBean;
 	}
  
-	@Bean  
-    public SecurityManager securityManager(){  
-       DefaultWebSecurityManager securityManager =  new DefaultWebSecurityManager();
+	@Primary
+	@Bean
+	public SecurityManager securityManager(){
+       DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
        securityManager.setRealm(shiroRealm());
        return securityManager;  
     }  
@@ -48,6 +50,5 @@ public class ShiroConfig {
     public ShiroRealm shiroRealm(){  
        ShiroRealm shiroRealm = new ShiroRealm();  
        return shiroRealm;  
-    }  
-	
+    }
 }

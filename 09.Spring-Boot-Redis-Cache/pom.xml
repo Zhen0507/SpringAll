@@ -65,8 +65,13 @@
 		   <artifactId>druid-spring-boot-starter</artifactId>
 		   <version>1.2.20</version>
 		</dependency>
-		
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

@@ -70,6 +70,7 @@
         <module name="Spring-Boot-MyBatis" />
         <module name="provider (1)" />
         <module name="Spring-Boot-Exception" />
+        <module name="server-consumer (1)" />
         <module name="server-consumer (3)" />
         <module name="Spring-Boot-Swagger2" />
         <module name="Eureka-Client (6)" />
@@ -112,6 +113,7 @@
         <module name="consumer (1)" />
         <module name="Config-Client (1)" />
         <module name="Eureka-Client (5)" />
+        <module name="Security (7)" />
         <module name="Config-Server (1)" />
         <module name="common-api (2)" />
         <module name="Eureka-Service (6)" />
@@ -131,8 +133,6 @@
       <module name="security (4)" target="21" />
       <module name="security (5)" target="21" />
       <module name="security (6)" target="21" />
-      <module name="Security (7)" target="21" />
-      <module name="server-consumer (1)" target="21" />
       <module name="server-consumer (1) (com.example)" target="21" />
       <module name="Server-Consumer (1) (com.example)" target="21" />
     </bytecodeTargetLevel>
